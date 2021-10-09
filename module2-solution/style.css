@@ -1,0 +1,183 @@
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+h2{
+  text-align: center;
+  }
+
+div { 
+  margin:1%;
+  padding:1%;
+  height: 15%;
+  font-family: Helvetica;
+  float: left;
+
+}
+
+.row {
+  width: 100%;
+  padding: 1%;
+}
+  .chicken, .beef, .sushi { 
+  border: 1px solid black;
+  background-color: grey;
+ }
+
+
+ /********** Large devices only **********/
+
+@media screen and (min-width: 992px) {
+div.chicken, .beef, .sushi { 
+  width: 30%;  
+  border: 1px solid black;}
+}
+
+#chicken-text{
+  position: absolute;
+  top: 91px;
+  left: 281px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: pink;
+}
+
+
+#beef-text{
+  position: absolute;
+  top: 91px;
+  left: 640px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+
+
+#sushi-text{
+  position: absolute;
+  top: 91px;
+  left: 1000px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: yellow;
+
+}
+
+
+
+
+/********** Medium devices only **********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  div.chicken, .beef {
+    width: 45%;
+    height: 15%;
+    float:left;
+    border: 1px solid black
+     }
+  div.sushi {
+    width: 92%;
+    height: 15%;
+    border: 1px solid black
+  }
+  
+#chicken-text{
+  position: absolute;
+  top: 87px;
+  left: 367px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: pink;
+}
+
+
+#beef-text{
+  position: absolute;
+  top: 87px;
+  left: 816px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+
+#sushi-text{
+  position: absolute;
+  top: 273px;
+  left: 816px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: yellow;
+
+}
+
+
+
+/********** Small devices only **********/
+@media screen and (max-width:767px) 
+{
+  div.chicken{border: 1spx solid black;
+    color: blue;}
+
+ div.chicken, .beef .sushi{
+    width: 25%;
+    height: 15%;
+    border: 1spx solid black;
+     }
+#chicken-text{
+  position: absolute;
+  top: 84px;
+  left: 700px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: pink;
+}
+
+
+
+#beef-text{
+  position: absolute;
+  top: 184px;
+  left: 700px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+
+#sushi-text{
+  position: absolute;
+  top: 284px;
+  left: 700px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: yellow;
+
+}
+
+
+
+}
